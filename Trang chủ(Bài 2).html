@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .app {
+            margin: 50px 0;
+            overflow: hidden;
+        }
+
+        .height-1 {
+            border-top: 1px solid;
+            height: 100px;
+        }
+
+        .height-2 {
+            height: 60px;
+        }
+
+        .height-3 {
+            height: 530px;
+            border-bottom: 1px solid;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .border {
+            border: 1px solid;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .align-items {
+            align-items: center;
+        }
+
+        .justify-items {
+            justify-content: center;
+        }
+
+        .col-2 {
+            flex: 0 0 16.67%;
+        }
+
+        .col-3 {
+            flex: 0 0 25%;
+        }
+
+        .col-5 {
+            flex: 0 0 41.67%;
+        }
+
+        .col-6 {
+            flex: 0 0 50%;
+        }
+        .col-5 {
+            flex: 0 0 41.67%;
+        }
+
+        .col-7 {
+            flex: 0 0 58.33%;
+        }
+
+        .col-9 {
+            flex: 0 0 75%;
+        }
+    </style>
+</head>
+<body>
+<div class="app">
+    <header>
+        <div class="header d-flex text-center height-1">
+            <div class="col-5 border d-flex justify-items align-items">
+                <span>Logo</span>
+            </div>
+
+            <div class="col-7 border d-flex justify-items align-items">
+                <span>Banner</span>
+            </div>
+        </div>
+    </header>
+    <nav class="d-flex height-2">
+        <div class="col-2 border d-flex justify-items align-items">Home</div>
+        <div class="col-2 border d-flex justify-items align-items">Product</div>
+        <div class="col-6 border d-flex justify-items align-items"></div>
+        <div class="col-2 border d-flex justify-items align-items">Order</div>
+    </nav>
+    <main>
+        <div class="d-flex height-3">
+            <div class="sidebar col-3 border d-flex justify-items align-items">
+                <span>Side bar</span>
+            </div>
+            <div class="content col-9 border d-flex justify-items align-items">
+                <span>List Product</span>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

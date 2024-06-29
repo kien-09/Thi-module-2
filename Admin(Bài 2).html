@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            height: 900px;
+            display: flex;
+            border: 1px solid;
+            margin: 40px 100px 0;
+        }
+
+        .left {
+            width: 20%;
+            height: 100%;
+            border-right: 1px solid;
+        }
+
+        .left-item {
+            width: 70%;
+            height: 50px;
+            text-align: center;
+            border: 1px solid;
+        }
+
+        .top {
+            margin: 150px 55px 0;
+            border-bottom: unset;
+            justify-content: space-between;
+        }
+
+        .bot {
+            margin: 0 55px;
+        }
+
+        .right {
+            width: 80%;
+            height: 100%;
+        }
+
+        .menu {
+            width: 100%;
+            height: 10%;
+            text-align: center;
+        }
+
+        .list {
+            width: 100%;
+            height: 90%;
+            border-top: 1px solid;
+            text-align: center;
+        }
+        .d-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container ">
+    <div class="left ">
+        <div class="left-item top d-flex ">Product</div>
+        <div class="left-item bot d-flex">Order</div>
+    </div>
+    <div class="right">
+        <div class="menu d-flex">Menu Admin</div>
+        <div class="list d-flex">List Users</div>
+    </div>
+
+</div>
+</body>
+</html>

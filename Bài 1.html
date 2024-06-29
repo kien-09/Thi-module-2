@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .mainitem {
+            width: calc(100% / 4 - 13px);
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+
+        .mainitem:hover {
+            border: 1px solid black;
+        }
+
+        .mainitem img {
+            width: 100%;
+            height: 80%;
+
+        }
+
+        .mainitem p {
+            width: 100%;
+            height: 20%;
+            justify-content: center;
+            text-align: center;
+            padding: 5%;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .mainitem {
+                width: calc(100% / 2 - 15px);
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .mainitem {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="mainitem">
+        <img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" alt="">
+        <p>Add a description of the image here</p>
+    </div>
+    <div class="mainitem">
+        <img src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" alt="">
+        <p>Add a description of the image here</p>
+    </div>
+    <div class="mainitem">
+        <img src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" alt="">
+        <p>Add a description of the image here</p>
+    </div>
+    <div class="mainitem">
+        <img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" alt="">
+        <p>Add a description of the image here</p>
+    </div>
+</div>
+
+</body>
+</html>
